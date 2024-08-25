@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>4Geeks Academy</title>
+		<style>
+			/* your code here */
+			table {
+				width: 500px;
+			}
+			table,
+			th,
+			td {
+				border: 1px solid black;
+			}
+			th {
+				background-color: rgb(203, 197, 255);
+				font-weight: bold;
+			}
+			.textarea {
+				box-sizing: border-box;
+				vertical-align: top;
+				text-align: left;
+			}
+		</style>
+	</head>
 
-    <style>
-        /* your code here */
-        
-    </style>
-</head>
-
-<body>
-    <form>
-        <!-- your code here -->
-        
-    </form>
-</body>
-
+	<body>
+		<form>
+			<!-- your code here -->
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>
+						<input type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td>Sex</td>
+					<td>
+						<input type="radio" id="Male" value="Male" name="gender" />
+						<label for="Male">Male </label><br />
+						<input type="radio" id="Female" value="Female" name="gender" />
+						<label for="Female">Female </label>
+					</td>
+				</tr>
+				<tr>
+					<td>Eye color</td>
+					<td>
+						<select id="colores" name="colores" size="1">
+							<option value="green">Green</option>
+							<option value="blue">Blue</option>
+							<option value="brown">Brown</option>
+							<option value="black">Black</option>
+							<option value="weird">Weird</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<input type="checkbox" name="sixfeet" id="sixfeet" />
+						<label for="sixfeet">Over 4 feet tall</label><br />
+						<input type="checkbox" name="twohpounds" id="twohpounds" />
+						<label for="twohpounds">Over 200 pounds</label><br />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="ability">Describe your athletic ability</label><br />
+						<input class="textarea" type="textarea" name="ability" id="ability" style="width: 100%; height: 200px" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="Enter my information" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>
